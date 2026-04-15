@@ -97,6 +97,12 @@
         "pricing/plans",
         "pricing/features-comparison"
       ]
+    },
+    {
+      "group": "Reference",
+      "pages": [
+        "node-graph"
+      ]
     }
   ],
   "footerSocials": {

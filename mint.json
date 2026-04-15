@@ -29,10 +29,6 @@
     {
       "name": "Documentation",
       "url": "/"
-    },
-    {
-      "name": "API Reference",
-      "url": "/api-reference"
     }
   ],
   "anchors": [

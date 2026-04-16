@@ -26,17 +26,7 @@
               "guides/home",
               "guides/dashboard",
               "guides/navigation",
-              "guides/search",
-              "guides/profile",
-              "guides/settings"
-            ]
-          },
-          {
-            "group": "Workspaces & Teams",
-            "pages": [
-              "guides/workspace",
-              "guides/team",
-              "guides/organization"
+              "guides/search"
             ]
           },
           {
@@ -49,28 +39,15 @@
             ]
           },
           {
-            "group": "Productivity",
+            "group": "Administration",
             "pages": [
-              "guides/tasks",
-              "guides/calendar",
-              "guides/messaging"
+              "guides/organization"
             ]
           },
           {
-            "group": "Business",
+            "group": "Plans",
             "pages": [
-              "guides/contacts",
-              "guides/deals",
-              "guides/reports",
-              "guides/analytics"
-            ]
-          },
-          {
-            "group": "Platform",
-            "pages": [
-              "guides/integrations",
-              "guides/pricing",
-              "guides/help"
+              "guides/pricing"
             ]
           }
         ]

@@ -1,16 +1,53 @@
 ---
 title: "Organization"
-description: "Guide to Organization"
+description: "Enterprise-tier controls for managing multiple workspaces, global billing, and cross-team policies."
 ---
 
-# Organization
+## Overview
 
-- **organization** - Organization settings section
-- **organization_scrolled** - Organization page scrolled down
-- **organization_closed_modal** - Organization section with modal closed
+Organizations are the highest-level container in the Trupeer data model. They are designed for enterprises that operate multiple workspaces under a single corporate entity — consolidating billing, SSO, and compliance controls.
 
-## Features
+<Frame caption="Organization settings">
+  ![Organization view](/images/0006_organization.png)
+</Frame>
 
-This section includes 3 pages and features.
+## What Lives at the Organization Layer
 
-Visit the Reference tab to see detailed screenshots.
+<CardGroup cols={2}>
+  <Card title="Workspace Roster" icon="sitemap">
+    Every workspace under the organization, with provisioning status and seat counts.
+  </Card>
+  <Card title="Consolidated Billing" icon="file-invoice-dollar">
+    A single contract and invoice spanning all workspaces, with per-workspace cost attribution.
+  </Card>
+  <Card title="SSO & Identity" icon="shield-halved">
+    Organization-wide SAML or OIDC configuration; SCIM provisioning from an identity provider.
+  </Card>
+  <Card title="Policies" icon="scale-balanced">
+    Retention, data residency, and audit policies applied uniformly across workspaces.
+  </Card>
+</CardGroup>
+
+## Extended Views
+
+<Frame caption="Organization — scrolled view">
+  ![Organization scrolled](/images/0007_organization_scrolled.png)
+</Frame>
+
+<Frame caption="Organization — dialog closed state">
+  ![Organization modal closed](/images/0019_organization_closed_modal.png)
+</Frame>
+
+## When to Use Organizations
+
+- Multiple distinct business units or departments each running their own workspace
+- Centralized procurement with decentralized product usage
+- Regulatory requirements for uniform policy enforcement
+
+For single-workspace customers, most equivalent controls are available at the [Settings](/guides/settings) level.
+
+## Related
+
+- [Workspace](/guides/workspace) — the immediate child of an organization
+- [Pricing](/guides/pricing) — enterprise tier details
+- [Settings](/guides/settings) — workspace-level configuration

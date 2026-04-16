@@ -1,14 +1,43 @@
 ---
 title: "Messaging"
-description: "Guide to Messaging"
+description: "Native conversation layer tying direct messages to content and workspace activity."
 ---
 
-# Messaging
+## Overview
 
-- **messages** - Messages section showing user conversations
+Messaging is the in-product communication channel for workspace members. It supports direct messages, group conversations, and threaded discussions anchored to specific content — keeping decisions co-located with the work they shape.
 
-## Features
+<Frame caption="Messaging — conversation list and active thread">
+  ![Messages view](/images/0009_messages.png)
+</Frame>
 
-This section includes 1 pages and features.
+## Conversation Types
 
-Visit the Reference tab to see detailed screenshots.
+<CardGroup cols={2}>
+  <Card title="Direct Messages" icon="comment">
+    One-to-one conversations between workspace members. Persistent, searchable, and notification-aware.
+  </Card>
+  <Card title="Group Channels" icon="comments">
+    Named channels for teams, projects, or topics. Membership is explicit and managed.
+  </Card>
+  <Card title="Content Threads" icon="comment-dots">
+    Conversations anchored to a specific document, task, or contact — visible from both the message and the content.
+  </Card>
+  <Card title="System Notifications" icon="bell">
+    Automated messages from integrations, review workflows, and scheduled events.
+  </Card>
+</CardGroup>
+
+## Message Composition
+
+Messages support rich text, inline mentions (@ user), inline content references, code blocks, and file attachments. Any attached file becomes a first-class [Library](/guides/library) asset.
+
+## Retention and Search
+
+Messages are retained according to workspace policy configured in [Settings](/guides/settings). All conversations are indexed by global [Search](/guides/search) and subject to the same access controls as surrounding content.
+
+## Related
+
+- [Contacts](/guides/contacts) — external participants
+- [Tasks](/guides/tasks) — discuss assigned work
+- [Team](/guides/team) — identify colleagues

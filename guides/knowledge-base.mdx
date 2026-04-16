@@ -1,15 +1,47 @@
 ---
 title: "Knowledge Base"
-description: "Guide to Knowledge Base"
+description: "Structured, searchable repository of articles, procedures, and reference material."
 ---
 
-# Knowledge Base
+## Overview
 
-- **knowledge_base** - Knowledge Base section
-- **knowledge_base_scrolled** - Knowledge Base articles
+The Knowledge Base is the canonical location for long-form, evergreen content. Unlike the [Library](/guides/library), which stores reusable assets, the Knowledge Base is optimized for authored documentation — articles, runbooks, policies, and FAQs.
 
-## Features
+<Frame caption="Knowledge Base — article index">
+  ![Knowledge Base view](/images/0005_knowledge_base.png)
+</Frame>
 
-This section includes 2 pages and features.
+## Content Model
 
-Visit the Reference tab to see detailed screenshots.
+<CardGroup cols={2}>
+  <Card title="Articles" icon="file-lines">
+    Primary content unit. Supports rich text, embeds, and collaborative editing with inline comments.
+  </Card>
+  <Card title="Categories" icon="folder-tree">
+    Hierarchical organization with breadcrumb navigation. Articles inherit category permissions.
+  </Card>
+  <Card title="Approval Workflow" icon="circle-check">
+    Draft → Review → Published states with reviewer assignment and audit trail.
+  </Card>
+  <Card title="Related Links" icon="link">
+    Bi-directional references between articles surface navigational context automatically.
+  </Card>
+</CardGroup>
+
+## Reading and Authoring
+
+<Frame caption="Knowledge Base — article detail view">
+  ![Knowledge Base scrolled](/images/0016_knowledge_base_scrolled.png)
+</Frame>
+
+Articles are authored in a block-based editor that supports headings, callouts, tables, code blocks, and embedded media. Publication is controlled by a lightweight review workflow that can be disabled for workspaces that prefer unrestricted publishing.
+
+## Search and Discovery
+
+All Knowledge Base content is indexed by global [Search](/guides/search). Inline linking between articles — implicit via titles or explicit via link blocks — generates a knowledge graph visible from each article's "Related" section.
+
+## Related
+
+- [Library](/guides/library) — reusable media and document assets
+- [Shared Pages](/guides/shared-pages) — publish articles externally
+- [Search](/guides/search) — cross-workspace lookup

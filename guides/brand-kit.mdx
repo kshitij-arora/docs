@@ -1,15 +1,53 @@
 ---
 title: "Brand Kit"
-description: "Guide to Brand Kit"
+description: "Single source of truth for logos, colors, typography, and brand guidelines."
 ---
 
-# Brand Kit
+## Overview
 
-- **brand_kit** - Brand Kit section
-- **brand_kit_scrolled** - Brand Kit configuration options
+The Brand Kit centralizes every asset that defines your organization's visual identity. Once configured, brand values propagate automatically to documents, [Shared Pages](/guides/shared-pages), and exports — ensuring consistent branding without per-document maintenance.
 
-## Features
+<Frame caption="Brand Kit — primary view">
+  ![Brand Kit view](/images/0004_brand_kit.png)
+</Frame>
 
-This section includes 2 pages and features.
+## Asset Categories
 
-Visit the Reference tab to see detailed screenshots.
+<CardGroup cols={2}>
+  <Card title="Logos" icon="image">
+    Light, dark, and compact logo variants. Automatically selected based on context and background.
+  </Card>
+  <Card title="Color Palette" icon="palette">
+    Primary, secondary, and semantic colors (success, warning, error) with accessibility contrast validation.
+  </Card>
+  <Card title="Typography" icon="font">
+    Heading and body font stacks, with web-font loading managed centrally.
+  </Card>
+  <Card title="Voice & Tone" icon="comments">
+    Guidelines for written content — terminology, capitalization rules, and banned phrases.
+  </Card>
+</CardGroup>
+
+## Configuration
+
+<Frame caption="Brand Kit — configuration panel">
+  ![Brand Kit scrolled](/images/0015_brand_kit_scrolled.png)
+</Frame>
+
+Brand Kit values are applied in the following contexts:
+
+- Document and page default styling
+- External [Shared Pages](/guides/shared-pages)
+- PDF and slide exports
+- Email notifications originating from the workspace
+- Embedded widgets on external properties
+
+## Governance
+
+Brand Kit modification is typically restricted to Admin and Owner roles. Changes are versioned — prior configurations can be restored from the version history panel.
+
+## Related
+
+- [Settings](/guides/settings) — workspace-wide configuration surface
+- [Shared Pages](/guides/shared-pages) — consumers of brand styling
+- [Library](/guides/library) — storage for additional brand assets

@@ -1,15 +1,53 @@
 ---
 title: "Shared Pages"
-description: "Guide to Shared Pages"
+description: "Publish internal content to external audiences with fine-grained access control."
 ---
 
-# Shared Pages
+## Overview
 
-- **shared_pages** - Shared Pages section
-- **shared_pages_scrolled** - Shared Pages listing
+Shared Pages is the publication layer of Trupeer. It takes internal content — a document, a Knowledge Base article, an entire folder — and exposes it at a shareable URL with configurable access controls.
 
-## Features
+<Frame caption="Shared Pages — publication index">
+  ![Shared Pages view](/images/0003_shared_pages.png)
+</Frame>
 
-This section includes 2 pages and features.
+## Access Modes
 
-Visit the Reference tab to see detailed screenshots.
+<CardGroup cols={2}>
+  <Card title="Public Link" icon="link">
+    Anyone with the URL can view. Ideal for marketing collateral and public documentation.
+  </Card>
+  <Card title="Password-Protected" icon="key">
+    URL plus a shared password — a middle ground for distribution without identity management.
+  </Card>
+  <Card title="Email Allowlist" icon="envelope-circle-check">
+    Readers verify via email. Every view is attributed and auditable.
+  </Card>
+  <Card title="SSO-Gated" icon="shield-halved">
+    Enterprise-tier — viewers must authenticate via a configured identity provider.
+  </Card>
+</CardGroup>
+
+## Page Management
+
+<Frame caption="Shared Pages — listing and controls">
+  ![Shared Pages scrolled](/images/0017_shared_pages_scrolled.png)
+</Frame>
+
+Each published page exposes the following controls:
+
+- **Expiration** — automatic un-publication at a scheduled time
+- **View analytics** — unique visitors, time-on-page, drop-off points
+- **Custom domain** — serve the page under your own subdomain
+- **Branding** — apply workspace [Brand Kit](/guides/brand-kit) styling
+- **Version pinning** — freeze the published content against future internal edits
+
+## Audit and Compliance
+
+Every view, export, and access-mode change is logged. Audit data is exportable from [Settings](/guides/settings) → Security.
+
+## Related
+
+- [Library](/guides/library) — source assets for publication
+- [Knowledge Base](/guides/knowledge-base) — article-style source content
+- [Brand Kit](/guides/brand-kit) — visual consistency for external pages

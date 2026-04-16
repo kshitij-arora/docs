@@ -1,14 +1,43 @@
 ---
 title: "Reports"
-description: "Guide to Reports"
+description: "Configurable, exportable analytics across workspace activity and business metrics."
 ---
 
-# Reports
+## Overview
 
-- **reports** - Reports and analytics dashboard
+Reports provides a structured layer above raw [Analytics](/guides/analytics) data. Where Analytics exposes interactive exploration, Reports captures fixed, reproducible views designed for recurring review and distribution.
 
-## Features
+<Frame caption="Reports — analytics dashboard">
+  ![Reports view](/images/0015_reports.png)
+</Frame>
 
-This section includes 1 pages and features.
+## Report Types
 
-Visit the Reference tab to see detailed screenshots.
+<CardGroup cols={2}>
+  <Card title="Operational" icon="gauge">
+    Activity and throughput — content created, tasks completed, meetings held.
+  </Card>
+  <Card title="Engagement" icon="chart-line">
+    Reader and collaborator behavior — views, edits, dwell time on [Shared Pages](/guides/shared-pages).
+  </Card>
+  <Card title="Revenue" icon="chart-pie">
+    Pipeline and revenue analytics derived from [Deals](/guides/deals) records.
+  </Card>
+  <Card title="Custom" icon="chart-simple">
+    Workspace-authored reports using the query builder over any data source.
+  </Card>
+</CardGroup>
+
+## Delivery
+
+Reports can be viewed interactively, exported to CSV or PDF, or scheduled for automatic delivery. Scheduled reports are sent via email or posted to a connected [Messaging](/guides/messaging) channel.
+
+## Access Control
+
+Report visibility follows workspace permissions. Sensitive reports — revenue, contractual data — can be gated to specific roles or teams.
+
+## Related
+
+- [Analytics](/guides/analytics) — interactive exploration
+- [Dashboard](/guides/dashboard) — at-a-glance metrics
+- [Deals](/guides/deals) — source data for revenue reports

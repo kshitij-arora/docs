@@ -1,14 +1,38 @@
 ---
 title: "Navigation"
-description: "Guide to Navigation"
+description: "Primary interface structure, sidebar, and wayfinding patterns across the platform."
 ---
 
-# Navigation
+## Overview
 
-- **06_sidebar_open** - Sidebar navigation menu
+Trupeer uses a persistent left sidebar as the primary wayfinding surface. Every destination in the product is reachable within two clicks from any screen.
 
-## Features
+<Frame caption="Primary navigation — sidebar expanded">
+  ![Sidebar open](/images/0006_06_sidebar_open.png)
+</Frame>
 
-This section includes 1 pages and features.
+## Interface Regions
 
-Visit the Reference tab to see detailed screenshots.
+<CardGroup cols={2}>
+  <Card title="Left Sidebar" icon="bars">
+    Primary navigation. Houses top-level sections (Home, Library, Dashboard) and workspace switcher at the footer.
+  </Card>
+  <Card title="Top Bar" icon="magnifying-glass">
+    Global search, quick-create action, notifications, and the active user menu.
+  </Card>
+  <Card title="Content Canvas" icon="window-maximize">
+    The main working surface. Adapts its layout based on the active section.
+  </Card>
+  <Card title="Contextual Panels" icon="sidebar-flip">
+    Right-aligned inspectors that surface metadata, collaborators, and inline actions for the selected object.
+  </Card>
+</CardGroup>
+
+## Keyboard Efficiency
+
+The sidebar can be toggled and content canvas can be traversed primarily via keyboard — the platform prioritizes low-latency input for power users.
+
+## Related
+
+- [Search](/guides/search) — global content lookup
+- [Settings](/guides/settings) — personalize layout and shortcuts

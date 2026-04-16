@@ -1,14 +1,46 @@
 ---
 title: "Team"
-description: "Guide to Team"
+description: "Member directory, role management, and collaboration scoping."
 ---
 
-# Team
+## Overview
 
-- **team** - Team management section
+The Team section surfaces every member of the active workspace. It is the authoritative directory for discovering collaborators, reviewing activity, and managing role assignments.
 
-## Features
+<Frame caption="Team management interface">
+  ![Team view](/images/0011_team.png)
+</Frame>
 
-This section includes 1 pages and features.
+## Capabilities
 
-Visit the Reference tab to see detailed screenshots.
+<CardGroup cols={2}>
+  <Card title="Member Directory" icon="address-book">
+    Searchable list of all active members with role, team affiliation, and last-active timestamp.
+  </Card>
+  <Card title="Role Assignment" icon="user-shield">
+    Configure member roles — Owner, Admin, Member, Guest — with granular permission inheritance.
+  </Card>
+  <Card title="Team Groupings" icon="users">
+    Create logical teams (e.g., Engineering, Design, Go-to-Market) for notification and permission scoping.
+  </Card>
+  <Card title="Invite Flow" icon="user-plus">
+    Send email or link-based invitations with pre-assigned roles and team memberships.
+  </Card>
+</CardGroup>
+
+## Permission Model
+
+Permissions in Trupeer follow a least-privilege model. A member's effective permissions are the union of their workspace role and any team-level grants.
+
+| Role | Typical Capabilities |
+|------|---------------------|
+| Owner | Full control; billing; delete workspace |
+| Admin | Manage members, settings, integrations |
+| Member | Create and edit content; invite guests |
+| Guest | Scoped read or edit access to specific pages |
+
+## Related
+
+- [Organization](/guides/organization) — cross-workspace member management
+- [Settings](/guides/settings) — access control policies
+- [Contacts](/guides/contacts) — external relationship management

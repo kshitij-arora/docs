@@ -1,0 +1,70 @@
+---
+title: "Permissions & Roles"
+description: "Complete matrix of workspace roles and their effective capabilities."
+---
+
+## Role Hierarchy
+
+Trupeer uses four workspace-level roles, ordered by privilege:
+
+1. **Owner** — terminal authority; can delete the workspace
+2. **Admin** — full operational control; cannot modify billing
+3. **Member** — content creator; cannot modify workspace settings
+4. **Guest** — scoped access to explicitly-shared content only
+
+A user's effective permissions are the union of their workspace role and any team-level or page-level grants.
+
+## Capability Matrix
+
+### Workspace Administration
+
+| Capability | Owner | Admin | Member | Guest |
+|-----------|:-----:|:-----:|:------:|:-----:|
+| Delete workspace | ✓ | | | |
+| Transfer ownership | ✓ | | | |
+| Modify billing | ✓ | | | |
+| Invite members | ✓ | ✓ | | |
+| Invite guests | ✓ | ✓ | ✓ | |
+| Modify roles | ✓ | ✓ | | |
+| Configure integrations | ✓ | ✓ | | |
+| View audit log | ✓ | ✓ | | |
+
+### Content
+
+| Capability | Owner | Admin | Member | Guest |
+|-----------|:-----:|:-----:|:------:|:-----:|
+| Create pages | ✓ | ✓ | ✓ | |
+| Edit own content | ✓ | ✓ | ✓ | ✓¹ |
+| Edit any content | ✓ | ✓ | | |
+| Delete content | ✓ | ✓ | ✓² | |
+| Publish Shared Pages | ✓ | ✓ | ✓ | |
+| Access Library | ✓ | ✓ | ✓ | ✓¹ |
+
+¹ Only for content explicitly shared with the guest
+² Only content they created, unless workspace policy overrides
+
+### Analytics & Reporting
+
+| Capability | Owner | Admin | Member | Guest |
+|-----------|:-----:|:-----:|:------:|:-----:|
+| View Dashboard | ✓ | ✓ | ✓ | |
+| Run Analytics queries | ✓ | ✓ | ✓ | |
+| Create Reports | ✓ | ✓ | ✓ | |
+| View revenue data | ✓ | ✓ | ✓³ | |
+| Export data | ✓ | ✓ | ✓⁴ | |
+
+³ Requires explicit grant under Settings → Security
+⁴ Subject to workspace data-export policy
+
+## Team-Level Grants
+
+Teams provide a second axis of permission scoping. A Member of a workspace may be promoted to Team Admin for a specific team, granting elevated privileges limited to that team's content without workspace-wide elevation.
+
+## Organization-Tier Roles
+
+Customers on the Organization tier have two additional roles above workspace Owner:
+
+- **Organization Admin** — can administer any workspace within the organization
+- **Organization Owner** — controls organization-wide billing, SSO, and policy
+
+See [Organization](/guides/organization) for configuration details.

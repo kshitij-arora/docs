@@ -1,14 +1,42 @@
 ---
 title: "Workspace"
-description: "Guide to Workspace"
+description: "The top-level container for content, members, and configuration."
 ---
 
-# Workspace
+## Overview
 
-- **workspace** - Workspace management and organization
+A Workspace is the primary organizational unit in Trupeer. Every page, document, asset, and member belongs to a workspace. Users can belong to multiple workspaces and switch between them from the sidebar footer.
 
-## Features
+<Frame caption="Workspace management interface">
+  ![Workspace view](/images/0020_workspace.png)
+</Frame>
 
-This section includes 1 pages and features.
+## Structural Model
 
-Visit the Reference tab to see detailed screenshots.
+<CardGroup cols={2}>
+  <Card title="Workspace" icon="building">
+    The outermost container. Holds all content, settings, billing, and membership.
+  </Card>
+  <Card title="Organization" icon="sitemap">
+    Optional enterprise layer above Workspace for multi-workspace management.
+  </Card>
+  <Card title="Teams" icon="users">
+    Logical groupings within a Workspace for permission and notification scoping.
+  </Card>
+  <Card title="Content" icon="folder">
+    Pages, documents, and assets — always scoped to a single workspace.
+  </Card>
+</CardGroup>
+
+## Common Operations
+
+- **Create a workspace** — from the workspace switcher in the sidebar footer
+- **Switch workspaces** — keyboard shortcut or menu-driven
+- **Leave or archive** — self-service from [Settings](/guides/settings)
+- **Transfer ownership** — administrator-gated operation under Settings → Members
+
+## Related
+
+- [Organization](/guides/organization) — multi-workspace management
+- [Team](/guides/team) — member groups
+- [Settings](/guides/settings) — workspace configuration

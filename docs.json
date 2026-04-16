@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "app.trupeer.ai Documentation",
-  "description": "Complete platform documentation for app.trupeer.ai",
+  "name": "Trupeer Documentation",
+  "description": "Complete reference and guides for the Trupeer platform.",
   "colors": {
     "primary": "#667eea",
     "light": "#764ba2",
@@ -21,32 +21,56 @@
             ]
           },
           {
-            "group": "Features",
+            "group": "Core Platform",
             "pages": [
-              "guides/analytics",
-              "guides/brand-kit",
-              "guides/calendar",
-              "guides/contacts",
-              "guides/current",
-              "guides/dashboard",
-              "guides/deals",
-              "guides/help",
               "guides/home",
-              "guides/integrations",
-              "guides/knowledge-base",
-              "guides/library",
-              "guides/messaging",
+              "guides/dashboard",
               "guides/navigation",
-              "guides/organization",
-              "guides/pricing",
-              "guides/profile",
-              "guides/reports",
               "guides/search",
-              "guides/settings",
-              "guides/shared-pages",
-              "guides/tasks",
+              "guides/profile",
+              "guides/settings"
+            ]
+          },
+          {
+            "group": "Workspaces & Teams",
+            "pages": [
+              "guides/workspace",
               "guides/team",
-              "guides/workspace"
+              "guides/organization"
+            ]
+          },
+          {
+            "group": "Content",
+            "pages": [
+              "guides/library",
+              "guides/knowledge-base",
+              "guides/shared-pages",
+              "guides/brand-kit"
+            ]
+          },
+          {
+            "group": "Productivity",
+            "pages": [
+              "guides/tasks",
+              "guides/calendar",
+              "guides/messaging"
+            ]
+          },
+          {
+            "group": "Business",
+            "pages": [
+              "guides/contacts",
+              "guides/deals",
+              "guides/reports",
+              "guides/analytics"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "guides/integrations",
+              "guides/pricing",
+              "guides/help"
             ]
           }
         ]
@@ -55,49 +79,13 @@
         "tab": "Reference",
         "groups": [
           {
-            "group": "Screenshots",
+            "group": "Reference",
             "pages": [
-              "features/feature-analytics-0",
-              "features/feature-brand-kit-0",
-              "features/feature-brand-kit-1",
-              "features/feature-calendar-0",
-              "features/feature-contacts-0",
-              "features/feature-current-0",
-              "features/feature-dashboard-0",
-              "features/feature-dashboard-1",
-              "features/feature-dashboard-2",
-              "features/feature-dashboard-3",
-              "features/feature-dashboard-4",
-              "features/feature-dashboard-5",
-              "features/feature-deals-0",
-              "features/feature-help-0",
-              "features/feature-home-0",
-              "features/feature-home-1",
-              "features/feature-home-2",
-              "features/feature-integrations-0",
-              "features/feature-knowledge-base-0",
-              "features/feature-knowledge-base-1",
-              "features/feature-library-0",
-              "features/feature-library-1",
-              "features/feature-messaging-0",
-              "features/feature-navigation-0",
-              "features/feature-organization-0",
-              "features/feature-organization-1",
-              "features/feature-organization-2",
-              "features/feature-pricing-0",
-              "features/feature-pricing-1",
-              "features/feature-pricing-2",
-              "features/feature-pricing-3",
-              "features/feature-pricing-4",
-              "features/feature-profile-0",
-              "features/feature-reports-0",
-              "features/feature-search-0",
-              "features/feature-settings-0",
-              "features/feature-shared-pages-0",
-              "features/feature-shared-pages-1",
-              "features/feature-tasks-0",
-              "features/feature-team-0",
-              "features/feature-workspace-0"
+              "reference/sitemap",
+              "reference/url-map",
+              "reference/permissions",
+              "reference/keyboard-shortcuts",
+              "reference/glossary"
             ]
           }
         ]

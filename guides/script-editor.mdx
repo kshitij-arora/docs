@@ -1,0 +1,75 @@
+---
+title: "Script Editor"
+description: "Edit the transcript, skip unwanted chunks, add pauses, and refresh the voiceover."
+---
+
+## Overview
+
+Trupeer turns your recording into a structured script. The Script Editor is a rich text surface where every chunk maps to a slice of the video — edit the words, and the video follows.
+
+## Editing the script
+
+<Steps>
+  <Step title="Open Script">
+    In the [Video Editor](/guides/video-editor) sidebar, open the **Script** tab.
+  </Step>
+  <Step title="Edit text">
+    Select any passage to edit, delete, or type new content. Click **Keep Changes** to commit.
+  </Step>
+  <Step title="Insert new lines">
+    Position the cursor and type. The script updates in place; the video re-renders the affected chunk on the next voiceover refresh.
+  </Step>
+  <Step title="Refresh Voiceover">
+    Click **Refresh VoiceOver** to regenerate audio for edited chunks only — unchanged chunks are preserved.
+  </Step>
+</Steps>
+
+## Trim and Untrim
+
+Trim removes content by selection rather than by time.
+
+- Highlight text → **Trim** in the inline popup → the selection disappears from the video.
+- Select a whole paragraph → **Trim** → the paragraph is removed.
+- Click trimmed (struck-through) text → **Untrim** → restores it.
+
+Because trims are selection-based, they are non-destructive and fully reversible.
+
+## Skip chunks
+
+Skipping excludes a whole chunk from playback without deleting it.
+
+<Steps>
+  <Step title="Open the chunk menu">
+    Click the **Delete** action next to a chunk.
+  </Step>
+  <Step title="Confirm the skip">
+    The chunk moves to the **Skips** list. Video duration updates automatically.
+  </Step>
+  <Step title="Restore a skip">
+    Click **Unskip** under the chunk and confirm. Refresh the voiceover to re-render.
+  </Step>
+</Steps>
+
+## Pauses
+
+Pauses insert timed silence where the narration needs breathing room.
+
+1. Select the text where you want a pause inserted.
+2. Click **Pause** in the popup and pick a duration.
+3. Save with **Keep Changes** and refresh the voiceover.
+
+To remove a pause, hover the marker and press **Backspace**, then re-save.
+
+## Original transcript
+
+If you've edited the script extensively and want to start over, open **Use Original Transcript** — Trupeer reverts to the first AI-generated script. Re-applying is reversible via **Keep Changes**.
+
+## Find and Replace
+
+Accessed from the editor toolbar, Find and Replace supports case-sensitive matching, single replace, and **Replace All**. It also runs in the [Document Editor](/guides/documents).
+
+## Related
+
+- [Visuals](/guides/visuals) — scenes, chapters, slides
+- [Voices](/guides/voices) — how the voiceover is generated
+- [Translations](/guides/translations) — regenerate the script in another language

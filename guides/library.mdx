@@ -1,49 +1,54 @@
 ---
 title: "Library"
-description: "Centralized repository for documents, media, and reusable content assets."
+description: "The folder-organized catalog of every video and document in your workspace."
 ---
 
 ## Overview
 
-The Library is the unified asset catalog of your workspace. Every reusable artifact — documents, images, video, templates, and brand assets — is discoverable, versioned, and accessible from here.
+The Library is where every recording, generated video, and generated document lives. It defaults to a folder grid; each folder reports how many items it contains and whether it's empty.
 
-<Frame caption="Library — primary content view">
-  ![Library view](/images/0002_library.png)
+<Frame caption="Library — Your Folders grid">
+  ![Library](/images/0002_library.png)
 </Frame>
 
-## Organization Model
+## Organizing content
 
 <CardGroup cols={2}>
-  <Card title="Folders" icon="folder">
-    Hierarchical grouping for coarse organization. Permissions can be scoped at the folder level.
+  <Card title="Create a folder" icon="folder-plus">
+    Top-right **Create a folder** → name the folder → confirm. Select content and drag it in.
   </Card>
-  <Card title="Tags" icon="tags">
-    Lightweight, multi-dimensional classification. An asset can carry any number of tags.
+  <Card title="Sort" icon="arrow-down-wide-short">
+    Use the **Newest** selector to switch between recency, title, and edit-date sorts.
   </Card>
-  <Card title="Collections" icon="layer-group">
-    Saved views or playlists that group assets by use case rather than filesystem location.
+  <Card title="Grid / Title view" icon="grip">
+    Toggle the right-side view switcher between grid tiles and a denser title list.
   </Card>
-  <Card title="Smart Filters" icon="filter">
-    Dynamic groups defined by metadata queries — e.g., "All video assets tagged ‘onboarding' modified this quarter."
+  <Card title="Search content" icon="magnifying-glass">
+    The top-bar **Search content** field filters across all folders by title.
   </Card>
 </CardGroup>
 
-## Asset Operations
+## Per-item actions
 
-<Frame caption="Library — scrolled view with content">
-  ![Library scrolled](/images/0014_library_scrolled.png)
-</Frame>
+Clicking into a folder exposes its videos and documents. Each item supports:
 
-Assets in the Library support the following operations:
+- **Open** — jumps to the [Video Editor](/guides/video-editor) or [Document Editor](/guides/documents)
+- **Rename** — inline rename via the three-dot menu
+- **Move** — relocate into a different folder
+- **Delete** — send to trash (Admin-level policies may restrict this)
+- **Share** — open the [Shared Pages](/guides/shared-pages) publish flow
 
-- **Preview** — inline media playback and document previews without download
-- **Version history** — every edit is retained with attribution and diff
-- **Share** — generate scoped links with expiration and access controls
-- **Transform** — format conversion and automated resizing for media
-- **Embed** — reference assets from documents, pages, and [Shared Pages](/guides/shared-pages)
+## Item states
+
+Generated content passes through visible states:
+
+- **Queued** — in line for AI processing
+- **Rendering** — video/document currently being generated
+- **Draft** — ready to edit but not yet published
+- **Published** — live on a Shared Page
 
 ## Related
 
-- [Brand Kit](/guides/brand-kit) — curated brand assets
-- [Knowledge Base](/guides/knowledge-base) — structured article content
-- [Shared Pages](/guides/shared-pages) — externally-published content
+- [Home](/guides/home) — quick entry points and recent items
+- [Shared Pages](/guides/shared-pages) — published output
+- [Recording](/guides/recording) / [Upload](/guides/upload) — how content enters the Library

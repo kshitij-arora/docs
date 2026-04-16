@@ -1,47 +1,75 @@
 ---
 title: "Knowledge Base"
-description: "Structured, searchable repository of articles, procedures, and reference material."
+description: "A branded help site assembled from your Shared Pages — optional AI search, custom domain, and sectioned navigation."
 ---
 
 ## Overview
 
-The Knowledge Base is the canonical location for long-form, evergreen content. Unlike the [Library](/guides/library), which stores reusable assets, the Knowledge Base is optimized for authored documentation — articles, runbooks, policies, and FAQs.
+The Knowledge Base is a hosted help-center built from Trupeer-published Shared Pages. You assemble sections, drop in published videos and documents, and publish the whole thing as a branded site — optionally at your own domain — with AI search on top.
 
-<Frame caption="Knowledge Base — article index">
+<Frame caption="Knowledge Base — section index">
   ![Knowledge Base view](/images/0005_knowledge_base.png)
 </Frame>
 
-## Content Model
+## Set it up
 
-<CardGroup cols={2}>
-  <Card title="Articles" icon="file-lines">
-    Primary content unit. Supports rich text, embeds, and collaborative editing with inline comments.
-  </Card>
-  <Card title="Categories" icon="folder-tree">
-    Hierarchical organization with breadcrumb navigation. Articles inherit category permissions.
-  </Card>
-  <Card title="Approval Workflow" icon="circle-check">
-    Draft → Review → Published states with reviewer assignment and audit trail.
-  </Card>
-  <Card title="Related Links" icon="link">
-    Bi-directional references between articles surface navigational context automatically.
-  </Card>
-</CardGroup>
+<Steps>
+  <Step title="Enable the Knowledge Base add-on">
+    Knowledge Base is an add-on to paid plans. See [Pricing](/guides/pricing). Without it, the tab is still visible but publishing is gated.
+  </Step>
+  <Step title="Open Knowledge Base → Manage">
+    Left menu → **Knowledge Base**.
+  </Step>
+  <Step title="Create sections">
+    Each section is a category (e.g. "Getting Started", "Admin", "Troubleshooting"). Name, reorder, and nest as needed.
+  </Step>
+  <Step title="Add content to sections">
+    Drop in already-[Shared Pages](/guides/shared-pages) from your Library. Reorder within each section.
+  </Step>
+  <Step title="Brand and publish">
+    Set logo, colors, and theme; pick a subdomain (default `*.trupeer.ai/kb/...`) or configure a custom domain; publish.
+  </Step>
+</Steps>
 
-## Reading and Authoring
+## Reader experience
 
-<Frame caption="Knowledge Base — article detail view">
+<Frame caption="Knowledge Base — expanded section view">
   ![Knowledge Base scrolled](/images/0016_knowledge_base_scrolled.png)
 </Frame>
 
-Articles are authored in a block-based editor that supports headings, callouts, tables, code blocks, and embedded media. Publication is controlled by a lightweight review workflow that can be disabled for workspaces that prefer unrestricted publishing.
+Visitors see:
 
-## Search and Discovery
+- A sectioned left navigation with your articles and videos.
+- Each entry is the Shared Page — video, transcript, and document.
+- Global search across the whole site.
 
-All Knowledge Base content is indexed by global [Search](/guides/search). Inline linking between articles — implicit via titles or explicit via link blocks — generates a knowledge graph visible from each article's "Related" section.
+## AI search
+
+With the **Knowledge Base with AI Search** add-on, the search box answers natural-language questions by retrieving relevant video moments and document passages.
+
+- Answers cite the source page and, for videos, the exact timestamp.
+- Search bundle includes an allotment of AI searches per month. See [Pricing](/guides/pricing) for the current cap.
+- Works across every published page in the Knowledge Base.
+
+## Custom domain
+
+Available on Scale and above. Configure a CNAME to Trupeer's edge, add the domain in the Knowledge Base settings, and Trupeer provisions a TLS certificate. Existing `*.trupeer.ai` URLs continue to work as redirects.
+
+## Branding
+
+Every Knowledge Base respects your [Brand Kit](/guides/brand-kit):
+
+- Logo top-left, linking to the KB home.
+- Color palette applied to primary buttons and links.
+- Typography applied to headings and body.
+- Optional footer with copyright and links.
+
+## Update published content
+
+Editing a source video or document in Trupeer does not auto-update the KB. Re-publish the Shared Page, and the KB entry updates on the next build.
 
 ## Related
 
-- [Library](/guides/library) — reusable media and document assets
-- [Shared Pages](/guides/shared-pages) — publish articles externally
-- [Search](/guides/search) — cross-workspace lookup
+- [Shared Pages](/guides/shared-pages) — the content units a KB contains
+- [Brand Kit](/guides/brand-kit) — logos, colors, and typography applied to the KB
+- [Pricing](/guides/pricing) — Knowledge Base add-on tiers

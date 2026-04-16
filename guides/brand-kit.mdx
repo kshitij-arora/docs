@@ -1,53 +1,84 @@
 ---
 title: "Brand Kit"
-description: "Single source of truth for logos, colors, typography, and brand guidelines."
+description: "Reusable templates, voices, avatars, backgrounds, logos, music, glossary, and pronunciations."
 ---
 
 ## Overview
 
-The Brand Kit centralizes every asset that defines your organization's visual identity. Once configured, brand values propagate automatically to documents, [Shared Pages](/guides/shared-pages), and exports — ensuring consistent branding without per-document maintenance.
+The Brand Kit is where every reusable branding asset lives. Once configured, these values propagate automatically into new videos and documents — no per-piece setup.
 
-<Frame caption="Brand Kit — primary view">
-  ![Brand Kit view](/images/0004_brand_kit.png)
+<Frame caption="Brand Kit — Video Templates tab">
+  ![Brand Kit](/images/0004_brand_kit.png)
 </Frame>
 
-## Asset Categories
+## Nine tabs
 
-<CardGroup cols={2}>
-  <Card title="Logos" icon="image">
-    Light, dark, and compact logo variants. Automatically selected based on context and background.
+<CardGroup cols={3}>
+  <Card title="Video Templates" icon="film" href="/guides/video-templates">
+    Saved video presets (voice, music, intro/outro, avatar, shadows, padding, zoom, captions, aspect).
   </Card>
-  <Card title="Color Palette" icon="palette">
-    Primary, secondary, and semantic colors (success, warning, error) with accessibility contrast validation.
+  <Card title="Doc Templates" icon="file-lines" href="/guides/doc-templates">
+    Saved documentation formats with fonts, colors, logos, and section prompts.
   </Card>
-  <Card title="Typography" icon="font">
-    Heading and body font stacks, with web-font loading managed centrally.
+  <Card title="Voices" icon="microphone">
+    Trupeer presets, your custom clones, and connected ElevenLabs voices. See [Voices](/guides/voices).
   </Card>
-  <Card title="Voice & Tone" icon="comments">
-    Guidelines for written content — terminology, capitalization rules, and banned phrases.
+  <Card title="Avatars" icon="user">
+    Trupeer avatars and your HeyGen-trained avatars. See [Avatars](/guides/avatars).
+  </Card>
+  <Card title="Backgrounds" icon="image">
+    Uploaded backdrops for the inset video. Appears in Visuals → Background.
+  </Card>
+  <Card title="Logos" icon="copyright">
+    Logo library with positioning templates used by intros, outros, and scenes.
+  </Card>
+  <Card title="Music" icon="music">
+    Curated plus uploaded tracks for background audio. Volume tunable per video.
+  </Card>
+  <Card title="Glossary" icon="book">
+    Branded terms and their exact spellings to guide AI generation.
+  </Card>
+  <Card title="Pronunciations" icon="volume-high">
+    Phonetic overrides for hard-to-pronounce words (IPA, audio sample, or upload).
   </Card>
 </CardGroup>
 
-## Configuration
+## Custom voices
 
-<Frame caption="Brand Kit — configuration panel">
-  ![Brand Kit scrolled](/images/0015_brand_kit_scrolled.png)
-</Frame>
+Record or upload a ~5-minute sample to train a voice that sounds like you, or connect ElevenLabs via API key. See [Voices](/guides/voices).
 
-Brand Kit values are applied in the following contexts:
+## Custom avatars
 
-- Document and page default styling
-- External [Shared Pages](/guides/shared-pages)
-- PDF and slide exports
-- Email notifications originating from the workspace
-- Embedded widgets on external properties
+Connect HeyGen with an API key, then pick any avatar from your HeyGen account inside Trupeer. See [Avatars](/guides/avatars).
 
-## Governance
+## Custom backgrounds
 
-Brand Kit modification is typically restricted to Admin and Owner roles. Changes are versioned — prior configurations can be restored from the version history panel.
+Brand Kit → **Backgrounds** → **Upload an Asset** → pick a file. In any video, open **Visual → Background** to apply it.
+
+## Custom music
+
+Brand Kit → **Music** → **Add New Music** → name the track → upload the MP3 → **Add**. Appears in the music library for any video.
+
+## Glossary — preserving brand terms
+
+Define brand words (e.g., "ChatGPT", "YouTube") so the AI script and voice render them exactly as you specified, across languages and voices.
+
+## Pronunciations
+
+Add a new pronunciation with:
+
+- **Phonetic text** (IPA) — e.g., `kriˈeɪʃən`
+- **Recorded audio** — click the record button
+- **Uploaded file** — MP3 or WAV
+
+Preview, then **Add**. The pronunciation applies to future voiceover renders.
+
+## Sync across videos
+
+Changes to the Brand Kit apply to new videos and to any video that you re-render. Existing exported videos are not retroactively updated.
 
 ## Related
 
-- [Organization](/guides/organization) — workspace-wide configuration surface
-- [Shared Pages](/guides/shared-pages) — consumers of brand styling
-- [Library](/guides/library) — storage for additional brand assets
+- [Video Templates](/guides/video-templates) — save a reusable video style
+- [Doc Templates](/guides/doc-templates) — save a reusable doc style
+- [Voices](/guides/voices), [Avatars](/guides/avatars)

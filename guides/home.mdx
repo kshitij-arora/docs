@@ -1,35 +1,56 @@
 ---
 title: "Home"
-description: "The central workspace hub for navigating projects, recent activity, and personalized content."
+description: "The starting surface for every Trupeer workflow — record, upload, or resume recent content."
 ---
 
 ## Overview
 
-The Home screen is the default landing experience for every signed-in user. It surfaces the most relevant work across projects, teams, and content libraries, eliminating the need to search through nested menus to resume work.
+Home is the landing surface at [app.trupeer.ai](https://app.trupeer.ai). It exposes the two primary creation paths, a set of popular-feature entry points, and the most recent items you've worked on.
 
-<Frame caption="Home — initial view on sign-in">
-  ![Home initial view](/images/0001_home_initial.png)
+<Frame caption="Home — Welcome back with Start Recording / Upload a Video and recent content">
+  ![Home](/images/0001_home_initial.png)
 </Frame>
 
-## Key Capabilities
+## What you can do from Home
 
 <CardGroup cols={2}>
-  <Card title="Recent Activity" icon="clock-rotate-left">
-    A live feed of the documents, pages, and assets you last interacted with, sorted by recency.
+  <Card title="Start Recording" icon="circle-dot" href="/guides/recording">
+    Launches the Chrome extension recorder.
   </Card>
-  <Card title="Quick Actions" icon="bolt">
-    One-click access to frequent workflows such as creating a new document, inviting collaborators, or opening the Library.
+  <Card title="Upload a Video" icon="upload" href="/guides/upload">
+    Bring in an existing MP4/WEBM for AI processing.
   </Card>
-  <Card title="Personalized Feed" icon="sparkles">
-    Content recommendations tailored to your role, team, and recent workspace patterns.
+  <Card title="Create a Video" icon="film">
+    Shortcut into the recording + AI generation pipeline.
   </Card>
-  <Card title="Workspace Shortcuts" icon="compass">
-    Persistent entry points to pinned workspaces, favorite pages, and frequently-accessed tools.
+  <Card title="Create a Document" icon="file-lines">
+    Produce a how-to document from a recording, without exporting the video.
+  </Card>
+  <Card title="Translate Content" icon="language" href="/guides/translations">
+    Regenerate an existing video or document in another language.
+  </Card>
+  <Card title="Invite team" icon="user-plus" href="/guides/organization">
+    Opens the Organization invite flow directly from the top-right.
   </Card>
 </CardGroup>
 
+## Layout
+
+- **Left sidebar**: Home, [Library](/guides/library), [Shared Pages](/guides/shared-pages), [Brand Kit](/guides/brand-kit), [Knowledge Base](/guides/knowledge-base), [Organization](/guides/organization).
+- **Top bar**: Help, **Invite team**, **Create new**.
+- **Main canvas**: Welcome block, creation CTAs, Popular features, Recent content grid.
+- **Sidebar footer**: current plan, AI minutes remaining, Upgrade Plan, account menu.
+
+## Recent content
+
+The Recent content grid lists the most recently edited items across your Library and folders. Each tile shows the thumbnail, language, creator, and date. Click a tile to jump directly into the editor.
+
+## What's new
+
+The **What's new** button in the lower-left sidebar opens a popup of recently released features so you can try them from Home.
+
 ## Related
 
-- [Dashboard](/guides/dashboard) — analytical views and KPIs
-- [Search](/guides/search) — locate content across the workspace
-- [Navigation](/guides/navigation) — understanding the primary interface
+- [Library](/guides/library) — folders and the full content list
+- [Recording](/guides/recording) — capture flow
+- [Upload](/guides/upload) — upload flow

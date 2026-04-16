@@ -1,53 +1,73 @@
 ---
 title: "Shared Pages"
-description: "Publish internal content to external audiences with fine-grained access control."
+description: "Publish a video or its document at a Trupeer URL so anyone with the link can watch or read."
 ---
 
 ## Overview
 
-Shared Pages is the publication layer of Trupeer. It takes internal content — a document, a Knowledge Base article, an entire folder — and exposes it at a shareable URL with configurable access controls.
+A Shared Page is the public surface for a finished video + document pair. Publish from the [Video Editor](/guides/video-editor) or [Library](/guides/library), and Trupeer serves the content at a shareable URL with embedded player, scrollable transcript, and the generated document alongside.
 
 <Frame caption="Shared Pages — publication index">
   ![Shared Pages view](/images/0003_shared_pages.png)
 </Frame>
 
-## Access Modes
+## Publish a video
 
-<CardGroup cols={2}>
-  <Card title="Public Link" icon="link">
-    Anyone with the URL can view. Ideal for marketing collateral and public documentation.
-  </Card>
-  <Card title="Password-Protected" icon="key">
-    URL plus a shared password — a middle ground for distribution without identity management.
-  </Card>
-  <Card title="Email Allowlist" icon="envelope-circle-check">
-    Readers verify via email. Every view is attributed and auditable.
-  </Card>
-  <Card title="SSO-Gated" icon="shield-halved">
-    Enterprise-tier — viewers must authenticate via a configured identity provider.
-  </Card>
-</CardGroup>
+<Steps>
+  <Step title="Open the video">
+    From the Library, open the video you want to share.
+  </Step>
+  <Step title="Click Publish / Share">
+    Top right of the Video Editor. Confirms the current draft is what gets published.
+  </Step>
+  <Step title="Pick visibility">
+    **Public** (anyone with the link) or **Unlisted** (link-only, not indexed). Both produce a `trupeer.ai/s/...` URL.
+  </Step>
+  <Step title="Copy the link">
+    Share it in chat, email, or embed into your own site.
+  </Step>
+</Steps>
 
-## Page Management
+## What readers see
+
+A published page includes:
+
+- The rendered video with play controls.
+- A synced transcript on the side — click a line to jump to that moment.
+- The [Document](/guides/documents) — summary, steps, inline annotated screenshots.
+- Download / Export affordances if enabled.
+- Your workspace branding from the [Brand Kit](/guides/brand-kit).
+
+## Embed on your site
+
+Each Shared Page has an **Embed** option that returns an `<iframe>` snippet. Paste it into a blog post, help center, or landing page. The embed inherits the page's branding and permissions.
+
+## Manage published pages
 
 <Frame caption="Shared Pages — listing and controls">
   ![Shared Pages scrolled](/images/0017_shared_pages_scrolled.png)
 </Frame>
 
-Each published page exposes the following controls:
+From the **Shared Pages** tab in the left menu, each card lets you:
 
-- **Expiration** — automatic un-publication at a scheduled time
-- **View analytics** — unique visitors, time-on-page, drop-off points
-- **Custom domain** — serve the page under your own subdomain
-- **Branding** — apply workspace [Brand Kit](/guides/brand-kit) styling
-- **Version pinning** — freeze the published content against future internal edits
+- **Copy link** — share the public URL
+- **Open** — view as a reader would
+- **Unpublish** — revoke access; the URL 404s thereafter
+- **Republish** — push the latest draft edits to the live page
 
-## Audit and Compliance
+Edits to the source video or document are **not** automatically live — they publish when you click **Republish**.
 
-Every view, export, and access-mode change is logged. Audit data is exportable from the [Organization](/guides/organization) administration surface.
+## Branding and custom domain
+
+- Pages pick up your Brand Kit logo, colors, and fonts.
+- Custom domain (e.g. `docs.yourcompany.com`) is available on the Scale plan and above. Configure from **Organization → Domain**.
+
+## Analytics
+
+Each page records view counts and unique visitors, visible on the Shared Page card. For deeper analytics (watch-through, drop-off), use the [Organization](/guides/organization) analytics tab.
 
 ## Related
 
-- [Library](/guides/library) — source assets for publication
-- [Knowledge Base](/guides/knowledge-base) — article-style source content
-- [Brand Kit](/guides/brand-kit) — visual consistency for external pages
+- [Video Editor](/guides/video-editor) — source of the published video
+- [Documents](/guides/documents) — the companion text published on the same page
+- [Knowledge Base](/guides/knowledge-base) — bundle many Shared Pages into a branded help site

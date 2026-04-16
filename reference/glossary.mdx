@@ -1,90 +1,129 @@
 ---
 title: "Glossary"
-description: "Canonical definitions for terms used throughout the Trupeer platform and documentation."
+description: "Canonical definitions for terms used throughout the Trupeer platform."
 ---
 
 ## A
 
 **Admin**
-A workspace role with elevated permissions — member management, settings configuration, and integration administration. Does not include billing ownership.
+Workspace role with full control — members, billing, integrations, and all content. See [Permissions & Roles](/reference/permissions).
 
-**Asset**
-Any stored file or object within the [Library](/guides/library) — documents, images, video, and templates.
+**Annotation**
+Text, shape, blur, or image overlay added to a video scene or a document screenshot. See [Annotations](/guides/annotations).
 
-**Audit Log**
-An immutable, append-only record of security-relevant events. Available to Admin and Owner roles.
+**Aspect Ratio**
+Width-to-height ratio of the rendered video (16:9, 9:16, 1:1). Set per video or from a [Video Template](/guides/video-templates).
+
+**Avatar**
+An on-screen presenter generated from an AI avatar source (Trupeer presets or [HeyGen](/guides/avatars) clones). Optional per video.
 
 ## B
 
 **Brand Kit**
-The centralized store of visual and written brand guidelines. See [Brand Kit](/guides/brand-kit).
+Nine-tab reusable assets hub — templates, voices, avatars, backgrounds, logos, music, glossary, pronunciations. See [Brand Kit](/guides/brand-kit).
 
 ## C
 
-**Canvas**
-The main content area of any screen — contrasted with the sidebar, top bar, and contextual panels.
+**Caption**
+On-screen subtitle generated from the script. Toggle per video or via template.
 
-**Category**
-A hierarchical grouping within the [Knowledge Base](/guides/knowledge-base). Categories can nest and inherit permissions.
+**Chapter**
+A named segment of a video, used for navigation in the player and the Shared Page. See [Visuals](/guides/visuals).
 
-**Collection**
-A saved view of Library assets defined by filter criteria rather than folder membership.
+**Custom Voice**
+A voice model trained from a ~5-minute sample of the user's speech. See [Voices](/guides/voices).
 
 ## D
 
-**Dashboard**
-The primary analytical surface exposing operational KPIs. See [Dashboard](/guides/dashboard).
+**Doc Template**
+A saved documentation style — fonts, colors, logo, section prompts — applied when Trupeer generates a how-to. See [Doc Templates](/guides/doc-templates).
+
+**Document**
+The auto-generated how-to doc that accompanies every video. See [Documents](/guides/documents).
+
+## E
+
+**Editor**
+Shorthand for either the [Video Editor](/guides/video-editor) or the [Document Editor](/guides/documents).
+
+**ElevenLabs**
+Third-party voice provider. Connect via API key for access to its voice catalog from inside Trupeer.
 
 ## G
 
-**Guest**
-A restricted role with scoped access to specific content. Guests cannot invite other users or access workspace settings.
+**Glossary (Brand Kit)**
+A list of brand terms with exact spellings, used to guide AI script generation.
+
+## H
+
+**HeyGen**
+Third-party avatar provider. Connect via API key to use HeyGen-trained avatars inside Trupeer.
+
+## I
+
+**Intro / Outro**
+Branded slides prepended or appended to a video. Configurable per video or in a Video Template.
 
 ## K
 
 **Knowledge Base**
-The article-oriented content surface for long-form, evergreen documentation. See [Knowledge Base](/guides/knowledge-base).
+A branded help site assembled from Shared Pages. Add-on on Pro and above. See [Knowledge Base](/guides/knowledge-base).
 
 ## L
 
 **Library**
-The centralized asset catalog. See [Library](/guides/library).
-
-## M
-
-**Member**
-The default workspace role. Can create content and invite guests, but cannot modify settings or billing.
-
-## O
-
-**Organization**
-The enterprise-tier container grouping multiple workspaces. See [Organization](/guides/organization).
-
-**Owner**
-The highest workspace role with billing ownership and the ability to delete the workspace.
+Central catalog of your videos, documents, and folders. See [Library](/guides/library).
 
 ## P
 
-**Page**
-A single, URL-addressable content unit. Can be published internally or externally via [Shared Pages](/guides/shared-pages).
+**Pause**
+A deliberate silence inserted in the script via the Script Editor. Preserved through voice regeneration.
+
+**Pronunciation**
+A phonetic override for a specific word. Stored in the Brand Kit; applied to voiceover renders.
 
 ## R
 
-**Role**
-A workspace-level permission tier. Trupeer supports four roles: Owner, Admin, Member, and Guest.
+**Recording**
+The Trupeer Chrome extension capture flow — screen, window, or tab with optional mic/camera. See [Recording](/guides/recording).
 
 ## S
 
+**Scene**
+A visually distinct segment of the rendered video — background, layout, and annotations. See [Visuals](/guides/visuals).
+
 **SCIM**
-System for Cross-domain Identity Management. Used by enterprise customers to provision and deprovision users from an external identity provider.
+System for Cross-domain Identity Management — enterprise user provisioning from an IdP.
+
+**Script**
+The textual source-of-truth for the video's voiceover. Editing the script triggers voice regeneration.
 
 **Shared Page**
-An internal document published to an external URL with configurable access controls. See [Shared Pages](/guides/shared-pages).
+A video + document pair published at a `trupeer.ai/s/...` URL. See [Shared Pages](/guides/shared-pages).
+
+**Skip**
+A marked portion of the source recording that is excluded from the final render without deleting it — reversible.
 
 **SSO**
-Single Sign-On. Enterprise authentication via SAML or OIDC providers.
+Single Sign-On via SAML or OIDC. Enterprise-tier.
 
-## W
+## T
 
-**Workspace**
-The primary container for content, members, and configuration.
+**Translation**
+A language-swapped copy of a video or document. See [Translations](/guides/translations).
+
+**Trim**
+Cropping start or end of the source video, or the rendered output. See [Script Editor](/guides/script-editor) and [Visuals](/guides/visuals).
+
+## V
+
+**Video Template**
+A saved video style bundling voice, music, visuals, avatar, zoom, captions, and aspect. See [Video Templates](/guides/video-templates).
+
+**Viewer**
+Workspace role with read-only access. Cannot author.
+
+## Z
+
+**Zoom**
+Auto-focus on the cursor or active region during a screen recording. Toggle per video or via template.

@@ -1,0 +1,74 @@
+---
+title: "AI Voiceovers"
+description: "Use an AI voice, keep your own voice, or plug in an ElevenLabs key for custom voices."
+---
+
+## Overview
+
+Every Trupeer video has exactly one audio track generated from the [script](/guides/script-editor). You choose the voice — a Trupeer preset, your own original narration, or a voice you've created elsewhere and connected via API.
+
+## Voice options
+
+<CardGroup cols={2}>
+  <Card title="Trupeer AI voices" icon="microphone">
+    A library of preset voices in multiple tones and accents, bundled with your plan.
+  </Card>
+  <Card title="Original voice" icon="waveform">
+    Keep the narration from your recording. The AI still drives transcript, trim, and edits.
+  </Card>
+  <Card title="Custom voice" icon="user">
+    Record or upload a ~5 minute sample to train a voice that sounds like you.
+  </Card>
+  <Card title="External voice (ElevenLabs)" icon="key">
+    Plug in your own ElevenLabs API key and select any voice from your account.
+  </Card>
+</CardGroup>
+
+## Switch voices in the editor
+
+1. In the [Video Editor](/guides/video-editor), open the **AI voice** panel.
+2. Pick a voice. The list includes Trupeer presets, any custom voices you've saved, and external voices if connected.
+3. Click **Refresh VoiceOver**. Only chunks that changed since the last render re-generate.
+
+## Retain the original voice
+
+### From the recorder
+
+After stopping the recording, open **Volume settings** and enable **Retain your original voice**. Then click **Generate AI Content**.
+
+### From an upload
+
+On the upload screen, check **Use Creator's Original Voice** before **Submit**.
+
+In both cases, the AI still transcribes and chunks your audio; edits in the script regenerate only affected segments.
+
+## Create a custom voice
+
+<Steps>
+  <Step title="Open AI Voice → Create a new voice">
+    In the Video Editor or in [Brand Kit → Voices](/guides/brand-kit).
+  </Step>
+  <Step title="Name the voice">
+    Use a clear identifier — e.g., "Manik's Voice".
+  </Step>
+  <Step title="Provide a sample">
+    Upload an audio file, or record directly in the browser. ~5 minutes is the recommended minimum for a good clone; record in a quiet environment.
+  </Step>
+  <Step title="Save and use">
+    The voice appears in the voice picker and in the Brand Kit Voices tab.
+  </Step>
+</Steps>
+
+## Connect ElevenLabs
+
+1. In [Brand Kit](/guides/brand-kit), click **Connect your own API key**.
+2. Pick **ElevenLabs** as the provider and paste your key.
+3. Back in the Video Editor **AI voice** panel, enable **Custom API voice generation**.
+4. Select a personal ElevenLabs voice and refresh the voiceover.
+
+## Related
+
+- [Script Editor](/guides/script-editor) — the text the voice speaks
+- [Brand Kit](/guides/brand-kit) — voice library management
+- [Pronunciations](/guides/brand-kit) — fix how specific words are said
+- [Translations](/guides/translations) — voice + language together

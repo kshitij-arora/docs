@@ -1,36 +1,35 @@
 ---
 title: "URL Map"
-description: "Complete reference of application routes and their corresponding surfaces."
+description: "Reference of application routes and their corresponding surfaces."
 ---
 
 ## Overview
 
 Every screen in Trupeer is addressable by a stable URL. This map enumerates the canonical route for each surface and its corresponding guide.
 
-## Primary Routes
+## App routes
 
 | Route | Surface | Guide |
 |-------|---------|-------|
-| `/` | Home — default landing screen | [Home](/guides/home) |
-| `/dashboard` | Analytical dashboard | [Dashboard](/guides/dashboard) |
-| `/search` | Global search interface | [Search](/guides/search) |
-| `/organization` | Organization-level controls | [Organization](/guides/organization) |
+| `/` | Home — Start Recording, Upload, recents | [Home](/guides/home) |
+| `/library` | Video and document library | [Library](/guides/library) |
+| `/library/:folderId` | Folder contents | [Library](/guides/library) |
+| `/videos/:id` | Video editor (default tab) | [Video Editor](/guides/video-editor) |
+| `/videos/:id/document` | Document editor | [Documents](/guides/documents) |
+| `/brand-kit` | Brand Kit — nine tabs | [Brand Kit](/guides/brand-kit) |
+| `/shared-pages` | Published pages list | [Shared Pages](/guides/shared-pages) |
+| `/knowledge-base` | Knowledge Base admin | [Knowledge Base](/guides/knowledge-base) |
+| `/organization` | Members, seats, analytics | [Organization](/guides/organization) |
+| `/organization/billing` | Plan and invoices | [Invoices](/guides/invoices) |
+| `/pricing` | Plans and add-ons | [Pricing](/guides/pricing) |
 
-## Content Routes
+## Public routes
 
-| Route | Surface | Guide |
-|-------|---------|-------|
-| `/library` | Asset library | [Library](/guides/library) |
-| `/knowledge-base` | Knowledge Base articles | [Knowledge Base](/guides/knowledge-base) |
-| `/shared-pages` | Externally-published pages | [Shared Pages](/guides/shared-pages) |
-| `/brand-kit` | Brand asset management | [Brand Kit](/guides/brand-kit) |
+| Route | Surface |
+|-------|---------|
+| `trupeer.ai/s/:slug` | Published Shared Page |
+| `<custom-domain>/...` | Custom-domain Knowledge Base (Scale and above) |
 
-## Plan Routes
+## URL stability
 
-| Route | Surface | Guide |
-|-------|---------|-------|
-| `/pricing` | Plan and billing information | [Pricing](/guides/pricing) |
-
-## URL Stability
-
-All routes listed above are considered stable public-facing URLs. Deep-linked query parameters may change between releases; path segments remain backward-compatible.
+Path segments above are stable; deep-link query parameters may change between releases.

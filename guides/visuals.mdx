@@ -1,0 +1,99 @@
+---
+title: "Visuals, Zoom and Transitions"
+description: "Backgrounds, intro/outro slides, scenes, chapters, aspect ratio, zoom, captions, and transitions."
+---
+
+## Overview
+
+Everything in the [Video Editor](/guides/video-editor) that shapes what the viewer *sees* — framing, zoom, transitions, backgrounds, slides, captions — is grouped here. Each of these works on top of the script and voiceover without requiring a re-render.
+
+## Backgrounds
+
+<Steps>
+  <Step title="Open Visuals → Background">
+    Toggle the background **On** to show a backdrop behind the capture.
+  </Step>
+  <Step title="Pick or upload">
+    Choose a pre-licensed background, or upload one via [Brand Kit](/guides/brand-kit) → Backgrounds.
+  </Step>
+  <Step title="Tune presentation">
+    Add a drop shadow, round the corners (16 is subtle, 100 is fully circular), and set padding to shrink the inset video relative to the background.
+  </Step>
+</Steps>
+
+## Intro and outro slides
+
+Intro/outro slides are editable on a Fabric.js canvas — add text, tweak font and size, upload a logo, and pick a background video.
+
+- Click **Intro Scene** to edit text, fonts, logo, and duration. Click **Save Changes** to apply.
+- Repeat for **Outro Slide**. Toggle **Disable Slide** to hide it; **Add Outro Slide** restores it.
+- Transitions can be set per slide — pick a style and duration.
+
+## Scenes
+
+Scenes are full-screen inserts that break up the capture — useful for titles, section dividers, or agenda slides.
+
+1. **Script → Add → Add Scenes**, then click the **+** in the Scenes section.
+2. Upload or pick a background, position a logo, add a text box.
+3. Configure entry/exit transitions (style, duration, direction).
+4. Optional — enable **AI Voiceover** for the scene and write prompt text.
+5. **Save Changes**, preview, or delete.
+
+## Chapters
+
+Chapters segment a long video into navigable sections.
+
+- **Script → Add → Add Chapters**.
+- **Generate with AI** for automatic chapter breaks, or **Add Manual** to author them.
+- Rename chapters inline; use the three-dot menu for per-chapter options.
+- Chapters appear on Shared Pages as a navigable sidebar.
+
+## Zoom
+
+Zoom effects magnify a region of the capture for focus.
+
+<CardGroup cols={2}>
+  <Card title="Per-chunk zoom" icon="magnifying-glass-plus">
+    In the **Zoom** tab, pick a zoom position and resolution. Set speed with the timeline handles.
+  </Card>
+  <Card title="Timeline zoom" icon="magnifying-glass">
+    The eye icon below the preview toggles a secondary timeline you can magnify for precise scrubbing.
+  </Card>
+</CardGroup>
+
+Delete a zoom via **Delete Zoom** in the zoom detail panel.
+
+## Transitions
+
+Transitions animate cuts between clips, between scenes, and on intro/outro.
+
+1. Hover a clip, scene, or slide → **Add Transitions**.
+2. Pick an entry style, an exit style, and a duration.
+3. **Save** and preview. Repeat per boundary as needed.
+
+## Aspect ratio
+
+Under the timeline, **Modify Aspect Ratio** offers:
+
+- **Auto** — detect from the source
+- **Wide** — 16:9
+- **Vertical** — 9:16
+
+The preview updates instantly.
+
+## Trim and crop the video
+
+- **Trim Video** on the timeline — drop the scissor button, drag to select, confirm to cut.
+- **Crop Video** — drag crop handles, then **Save Changes**.
+
+Both are non-destructive until export.
+
+## Captions
+
+Above the preview, **Turn On Captions** adds auto-generated captions that appear in preview and in the exported video.
+
+## Related
+
+- [Script Editor](/guides/script-editor) — trim and skip by selection
+- [Annotations](/guides/annotations) — overlays and blur
+- [Brand Kit](/guides/brand-kit) — source of custom backgrounds, logos, music

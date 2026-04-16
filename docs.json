@@ -21,21 +21,50 @@
             ]
           },
           {
-            "group": "Core Platform",
+            "group": "Core",
             "pages": [
               "guides/home",
-              "guides/dashboard",
-              "guides/navigation",
-              "guides/search"
+              "guides/library"
             ]
           },
           {
-            "group": "Content",
+            "group": "Recording & Upload",
             "pages": [
-              "guides/library",
-              "guides/knowledge-base",
+              "guides/recording",
+              "guides/upload"
+            ]
+          },
+          {
+            "group": "Video Editing",
+            "pages": [
+              "guides/video-editor",
+              "guides/script-editor",
+              "guides/visuals",
+              "guides/annotations",
+              "guides/avatars",
+              "guides/voices",
+              "guides/translations"
+            ]
+          },
+          {
+            "group": "Documents",
+            "pages": [
+              "guides/documents"
+            ]
+          },
+          {
+            "group": "Brand Kit",
+            "pages": [
+              "guides/brand-kit",
+              "guides/video-templates",
+              "guides/doc-templates"
+            ]
+          },
+          {
+            "group": "Sharing & Knowledge",
+            "pages": [
               "guides/shared-pages",
-              "guides/brand-kit"
+              "guides/knowledge-base"
             ]
           },
           {
@@ -47,7 +76,8 @@
           {
             "group": "Plans",
             "pages": [
-              "guides/pricing"
+              "guides/pricing",
+              "guides/invoices"
             ]
           }
         ]

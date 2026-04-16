@@ -1,0 +1,54 @@
+---
+title: "AI Avatars"
+description: "Render a presenter alongside your capture — Trupeer-native avatars or your own HeyGen-trained one."
+---
+
+## Overview
+
+An AI avatar adds a video presenter to the corner (or anywhere) of your capture. Trupeer ships a library of avatars and also integrates with **HeyGen** so you can bring your own likeness or an enterprise-licensed avatar.
+
+## Enable an avatar
+
+<Steps>
+  <Step title="Open AI Avatar">
+    In the [Video Editor](/guides/video-editor), choose **AI Avatar** → toggle **Enable AI Avatar**.
+  </Step>
+  <Step title="Pick a style">
+    Browse the Trupeer library — conversational, professional, or entertaining — and select one.
+  </Step>
+  <Step title="Customize presentation">
+    Set the avatar background (hex color), and pick a layout position — right bottom, top right, left bottom, etc.
+  </Step>
+  <Step title="Submit">
+    The avatar re-renders into the video at the next preview.
+  </Step>
+</Steps>
+
+## Using your own HeyGen avatar
+
+<Steps>
+  <Step title="Create the avatar in HeyGen">
+    In HeyGen, open **Avatar → Hyper-realistic Avatar**. Follow the template to record a ~30-second demo, upload the sample, and finish training.
+  </Step>
+  <Step title="Copy your HeyGen API key">
+    In HeyGen, **Profile → Account → Subscriptions and APIs** → copy the Agent API key.
+  </Step>
+  <Step title="Connect HeyGen to Trupeer">
+    In Trupeer, [Brand Kit](/guides/brand-kit) → **Connect your API key** → paste → **Connect Key**.
+  </Step>
+  <Step title="Use your avatar">
+    Back in the Video Editor, **AI Avatar → Use Your Custom API Avatar Generation** → select your avatar → Submit.
+  </Step>
+</Steps>
+
+## Considerations
+
+- **Credits** — avatar rendering consumes AI minutes per your plan. Check [Pricing](/guides/pricing) for your tier's allowance.
+- **Voice pairing** — each avatar has a default voice, configurable under [Brand Kit → Avatars](/guides/brand-kit).
+- **Placement** — corner positions are unobtrusive; full-slide avatars are best for title scenes.
+
+## Related
+
+- [Voices](/guides/voices) — pair a voice to the avatar
+- [Brand Kit](/guides/brand-kit) — avatar library and API key management
+- [Pricing](/guides/pricing) — avatar credits and plan limits

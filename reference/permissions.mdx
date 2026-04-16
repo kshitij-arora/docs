@@ -1,64 +1,67 @@
 ---
 title: "Permissions & Roles"
-description: "Complete matrix of workspace roles and their effective capabilities."
+description: "Workspace roles and their capabilities."
 ---
 
-## Role Hierarchy
+## Roles
 
-Trupeer uses four workspace-level roles, ordered by privilege:
+Trupeer uses three workspace-level roles:
 
-1. **Owner** — terminal authority; can delete the workspace
-2. **Admin** — full operational control; cannot modify billing
-3. **Member** — content creator; cannot modify workspace settings
-4. **Guest** — scoped access to explicitly-shared content only
+1. **Admin** — full workspace control including billing and members
+2. **Editor** — author and publish content; cannot modify billing or members
+3. **Viewer** — read-only access to shared content
 
-A user's effective permissions are the union of their workspace role and any page-level grants.
+Enterprise plans additionally support **SSO-mapped groups** and **SCIM-provisioned users**.
 
-## Capability Matrix
+## Capability matrix
 
 ### Administration
 
-| Capability | Owner | Admin | Member | Guest |
-|-----------|:-----:|:-----:|:------:|:-----:|
-| Delete workspace | ✓ | | | |
-| Transfer ownership | ✓ | | | |
-| Modify billing | ✓ | | | |
-| Invite members | ✓ | ✓ | | |
-| Invite guests | ✓ | ✓ | ✓ | |
-| Modify roles | ✓ | ✓ | | |
-| View audit log | ✓ | ✓ | | |
+| Capability | Admin | Editor | Viewer |
+|-----------|:-----:|:------:|:------:|
+| Modify billing / plan | ✓ | | |
+| Add / remove members | ✓ | | |
+| Change roles | ✓ | | |
+| Configure SSO / SCIM | ✓ | | |
+| Manage custom domain | ✓ | | |
+| View Organization analytics | ✓ | ✓ | |
 
 ### Content
 
-| Capability | Owner | Admin | Member | Guest |
-|-----------|:-----:|:-----:|:------:|:-----:|
-| Create pages | ✓ | ✓ | ✓ | |
-| Edit own content | ✓ | ✓ | ✓ | ✓¹ |
-| Edit any content | ✓ | ✓ | | |
-| Delete content | ✓ | ✓ | ✓² | |
-| Publish Shared Pages | ✓ | ✓ | ✓ | |
-| Access Library | ✓ | ✓ | ✓ | ✓¹ |
-| Manage Brand Kit | ✓ | ✓ | | |
-| Manage Knowledge Base | ✓ | ✓ | ✓³ | |
+| Capability | Admin | Editor | Viewer |
+|-----------|:-----:|:------:|:------:|
+| Record / upload video | ✓ | ✓ | |
+| Edit video / document | ✓ | ✓ | |
+| Publish Shared Pages | ✓ | ✓ | |
+| Delete content | ✓ | ✓¹ | |
+| Translate content | ✓ | ✓ | |
+| View Shared Pages | ✓ | ✓ | ✓ |
 
-¹ Only for content explicitly shared with the guest
-² Only content they created, unless workspace policy overrides
-³ Authoring only; publication workflows may require Admin approval
+¹ Only content they created, unless workspace policy overrides.
 
-### Dashboard
+### Brand Kit
 
-| Capability | Owner | Admin | Member | Guest |
-|-----------|:-----:|:-----:|:------:|:-----:|
-| View Dashboard | ✓ | ✓ | ✓ | |
-| Export data | ✓ | ✓ | ✓⁴ | |
+| Capability | Admin | Editor | Viewer |
+|-----------|:-----:|:------:|:------:|
+| Manage templates | ✓ | ✓ | |
+| Manage voices / avatars | ✓ | ✓ | |
+| Manage logos / backgrounds / music | ✓ | ✓ | |
+| Edit glossary / pronunciations | ✓ | ✓ | |
 
-⁴ Subject to workspace data-export policy
+### Knowledge Base (add-on)
 
-## Organization-Tier Roles
+| Capability | Admin | Editor | Viewer |
+|-----------|:-----:|:------:|:------:|
+| Manage sections | ✓ | ✓ | |
+| Publish / unpublish | ✓ | ✓ | |
+| Configure custom domain | ✓ | | |
+| Read (public side) | ✓ | ✓ | ✓ |
 
-Customers on the Organization tier have two additional roles above workspace Owner:
+## SSO and SCIM
 
-- **Organization Admin** — can administer any workspace within the organization
-- **Organization Owner** — controls organization-wide billing, SSO, and policy
+On Enterprise, role mapping from the identity provider overrides workspace-level role changes. Removing a user in the IdP deprovisions them in Trupeer on the next SCIM sync.
 
-See [Organization](/guides/organization) for configuration details.
+## Related
+
+- [Organization](/guides/organization) — member management UI
+- [Pricing](/guides/pricing) — which capabilities require which plan

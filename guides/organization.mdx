@@ -1,48 +1,70 @@
 ---
 title: "Organization"
-description: "Enterprise-tier controls for managing multiple workspaces, global billing, and cross-team policies."
+description: "Workspace settings: members, seats, roles, analytics, and plan management."
 ---
 
 ## Overview
 
-Organizations are the highest-level container in the Trupeer data model. They are designed for enterprises that operate multiple workspaces under a single corporate entity — consolidating billing, SSO, and compliance controls.
+The Organization surface is where you administer your Trupeer workspace — invite teammates, assign roles, add or remove seats, and view usage analytics. It's the shared-state layer on top of everything else.
 
-<Frame caption="Organization settings">
+<Frame caption="Organization — members and settings">
   ![Organization view](/images/0006_organization.png)
 </Frame>
 
-## What Lives at the Organization Layer
+## Members
+
+The **Members** tab lists everyone on the workspace with their email, role, and status. From this table you can:
+
+- **Add Member** — invite a new teammate by email; they receive a sign-up link.
+- **Change role** — toggle a member between Admin and Editor (and Viewer where applicable).
+- **Remove** — revoke access. Their created content stays in the workspace.
+
+### Roles
 
 <CardGroup cols={2}>
-  <Card title="Workspace Roster" icon="sitemap">
-    Every workspace under the organization, with provisioning status and seat counts.
+  <Card title="Admin" icon="shield-halved">
+    Full workspace control — billing, members, integrations, and all content.
   </Card>
-  <Card title="Consolidated Billing" icon="file-invoice-dollar">
-    A single contract and invoice spanning all workspaces, with per-workspace cost attribution.
+  <Card title="Editor" icon="pen">
+    Can create, edit, and publish videos and documents. Cannot modify billing or members.
   </Card>
-  <Card title="SSO & Identity" icon="shield-halved">
-    Organization-wide SAML or OIDC configuration; SCIM provisioning from an identity provider.
-  </Card>
-  <Card title="Policies" icon="scale-balanced">
-    Retention, data residency, and audit policies applied uniformly across workspaces.
+  <Card title="Viewer" icon="eye">
+    Read-only access to shared content. Cannot author.
   </Card>
 </CardGroup>
 
-## Extended Views
+See [Permissions & Roles](/reference/permissions) for the full capability matrix.
 
-<Frame caption="Organization — scrolled view">
+## Seats and billing
+
+<Frame caption="Organization — seats and plan view">
   ![Organization scrolled](/images/0007_organization_scrolled.png)
 </Frame>
 
+- **Seats used / Seats available** — visible at the top of the Members tab.
+- **Add Seats** — opens a purchase flow for additional seats on the current plan.
+- **Plan** — current plan tier, renewal date, and upgrade/downgrade actions.
+- **Invoices** — historical invoices (see [Invoices](/guides/invoices)).
 
-## When to Use Organizations
+## Analytics
 
-- Multiple distinct business units or departments each running their own workspace
-- Centralized procurement with decentralized product usage
-- Regulatory requirements for uniform policy enforcement
+The **Analytics** tab surfaces workspace-level usage:
+
+- Videos created per member / per time window.
+- Published Shared Pages and view counts.
+- Minutes consumed against the plan's AI minute budget.
+- Knowledge Base views and AI search usage (when the KB add-on is active).
+
+## SSO and SCIM
+
+Available on Enterprise. Configure SAML or OIDC identity providers and SCIM v2 provisioning from the **Security** tab. Contact sales for onboarding.
+
+## Custom domain
+
+Available on Scale and above. Attach a domain for Shared Pages and the Knowledge Base from the **Domain** tab.
 
 ## Related
 
-- [Pricing](/guides/pricing) — enterprise tier details
-- [Brand Kit](/guides/brand-kit) — organization-wide branding
-- [Knowledge Base](/guides/knowledge-base) — organization knowledge repository
+- [Pricing](/guides/pricing) — plan tiers and seat pricing
+- [Invoices](/guides/invoices) — retrieve past invoices
+- [Permissions & Roles](/reference/permissions) — capability matrix

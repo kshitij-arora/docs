@@ -1,0 +1,74 @@
+---
+title: "Documents"
+description: "Trupeer auto-generates a how-to document alongside every video. Edit, annotate images, and translate it inline."
+---
+
+## Overview
+
+Alongside each video, Trupeer generates a structured how-to document — title, summary, inline screenshots, and step-by-step instructions — derived from the same script. You can edit the video and the document independently, but they share a source of truth.
+
+## Generate a document
+
+From the **Generate AI Content** screen after [recording](/guides/recording) or [uploading](/guides/upload):
+
+1. Open **Configure Output Options**.
+2. Enable the **Document** toggle (keep the **Video** toggle on too if you want both).
+3. Click **Generate AI Content**.
+
+Trupeer produces a summary, inline numbered screenshots, and step-by-step instructions.
+
+## Edit the document
+
+<Steps>
+  <Step title="Open the Document Editor">
+    From the Library item, switch to the **Document** tab, then click **Edit**.
+  </Step>
+  <Step title="Apply block styles">
+    Change block type (Heading 1/2/3, quote, etc.) via the toolbar. Standard inline formatting — **Bold**, *Italic*, <u>Underline</u>, hyperlinks, inline code — is all supported.
+  </Step>
+  <Step title="Find and replace">
+    Toolbar → **Find and Replace**. Supports case-sensitive matching and **Replace All**.
+  </Step>
+  <Step title="Manage images">
+    **Add Image** (from upload or timeline), **Add Screenshot** (capture from the video), or click an existing image to edit it.
+  </Step>
+  <Step title="Save">
+    Click **Save Changes**. The published [Shared Page](/guides/shared-pages) will pick up the new version on republish.
+  </Step>
+</Steps>
+
+## Image annotations
+
+Click any image in the editor → **Edit Image**. You can:
+
+- Draw circles, rectangles, and arrows — solid, soft, or outline styles, with color and stroke width.
+- **Blur** sensitive regions.
+- Add text with font, color, and size controls.
+- **Crop** — drag the crop area and apply.
+
+Apply or Cancel commits the edit.
+
+## Auto zoom and annotate
+
+In the Document Editor, **Image Settings → Auto Zoom and Annotate All Images** runs a bulk pass that crops each screenshot to its meaningful region and adds contextual highlights. Review on any image via **Edit Image** afterwards.
+
+## Adding external images
+
+1. Place the cursor where the image should land.
+2. Open **Add Image** from the toolbar and upload a file.
+3. Click the inserted image and use **Edit Image** to crop, blur, or annotate.
+4. **Save Changes**.
+
+## Translate the document
+
+The **Translate** option behaves identically to [video translation](/guides/translations). Title, description, and every block translate in place; images are preserved.
+
+## Export
+
+Exports are currently PDF, Markdown, and HTML. See the export menu in the Document Editor header.
+
+## Related
+
+- [Video Editor](/guides/video-editor) — the paired video side
+- [Doc Templates](/guides/doc-templates) — style the document with brand fonts and logos
+- [Shared Pages](/guides/shared-pages) — publish the video + document together

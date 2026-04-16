@@ -1,0 +1,13 @@
+{
+  "name": "app-docs",
+  "version": "1.0.0",
+  "description": "Documentation for app.trupeer.ai",
+  "scripts": {
+    "dev": "mintlify dev",
+    "build": "mintlify build",
+    "deploy": "mintlify deploy"
+  },
+  "devDependencies": {
+    "mintlify": "latest"
+  }
+}
